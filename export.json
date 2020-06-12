@@ -1,6 +1,6 @@
 {
     "cmsType": "contentful",
-    "projectTitle": "Stackbit New Theme",
+    "projectTitle": "Stackbit Starter Theme",
     "staticDir": "static",
     "pagesDir": "src/pages",
     "dataDir": "src/data",
@@ -2346,11 +2346,11 @@
             "relPath": "site-metadata.json",
             "data": {
                 "stackbit_model_type": "config",
-                "title": "Stackbit New Theme",
+                "title": "Stackbit Starter Theme",
                 "description": "An ultra customizable generic theme for Stackbit",
                 "header": {
                     "type": "header",
-                    "title": "New Theme",
+                    "title": "Starter",
                     "has_nav": true,
                     "nav_links": [
                         {
@@ -2437,7 +2437,7 @@
                             "stackbit_model_type": "object"
                         }
                     ],
-                    "content": "&copy; Stackbit-New. All rights reserved.",
+                    "content": "&copy; Stackbit-Starter. All rights reserved.",
                     "links": [
                         {
                             "type": "action",
@@ -2531,6 +2531,20 @@
         {
             "modelType": "data",
             "modelName": "person",
+            "relPath": "team/hanson-deck.yaml",
+            "data": {
+                "stackbit_model_type": "data",
+                "slug": "hanson-deck",
+                "first_name": "Hanson",
+                "last_name": "Deck",
+                "photo": "images/hanson-deck.jpg",
+                "bio": "Suspendisse ante mi, tincidunt sit amet odio sed, condimentum ultricies nunc. Nam iaculis commodo dui quis suscipit. Ut eu porttitor enim.",
+                "type": "person"
+            }
+        },
+        {
+            "modelType": "data",
+            "modelName": "person",
             "relPath": "team/miles-tone.yaml",
             "data": {
                 "stackbit_model_type": "data",
@@ -2568,6 +2582,7 @@
                             "src/data/team/miles-tone.yaml",
                             "src/data/team/dianne-ameter.yaml",
                             "src/data/team/eleanor-carr.yaml",
+                            "src/data/team/hanson-deck.yaml",
                             "src/data/team/gordon-norman.yaml"
                         ],
                         "stackbit_model_type": "object"
