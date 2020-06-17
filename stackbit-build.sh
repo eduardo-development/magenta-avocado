@@ -4,8 +4,8 @@ set -e
 set -o pipefail
 set -v
 
-curl -s -X POST __STACKBIT_WEBHOOK_URL__/pull > /dev/null
-npx @stackbit/stackbit-pull --stackbit-pull-api-url=__STACKBIT_PULL_API_URL__
-curl -s -X POST __STACKBIT_WEBHOOK_URL__/ssgbuild > /dev/null
+curl -s -X POST https://b8893ff97507.ngrok.io/project/5eea1fb6d11ba340594e8f44/webhook/build/pull > /dev/null
+npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://b8893ff97507.ngrok.io/pull/5eea1fb6d11ba340594e8f44
+curl -s -X POST https://b8893ff97507.ngrok.io/project/5eea1fb6d11ba340594e8f44/webhook/build/ssgbuild > /dev/null
 gatsby build
-curl -s -X POST __STACKBIT_WEBHOOK_URL__/publish > /dev/null
+curl -s -X POST https://b8893ff97507.ngrok.io/project/5eea1fb6d11ba340594e8f44/webhook/build/publish > /dev/null
